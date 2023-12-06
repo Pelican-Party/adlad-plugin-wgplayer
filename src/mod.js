@@ -83,12 +83,12 @@ export function wgplayerPlugin() {
 				return {
 					didShowAd: true,
 					errorReason: null,
-				}
+				};
 			} else {
 				return {
 					didShowAd: false,
 					errorReason: "unknown",
-				}
+				};
 			}
 		},
 	});
