@@ -57,7 +57,7 @@ export function wgplaygroundPlugin() {
 			if (delta < 5) {
 				return {
 					didShowAd: false,
-					errorReason: "time-constraint",
+					errorReason: /** @type {const} */ ("time-constraint"),
 				};
 			} else {
 				return {
@@ -87,7 +87,7 @@ export function wgplaygroundPlugin() {
 			} else {
 				return {
 					didShowAd: false,
-					errorReason: "unknown",
+					errorReason: /** @type {const} */ ("unknown"),
 				};
 			}
 		},
