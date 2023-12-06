@@ -1,4 +1,4 @@
-export function wgplaygroundPlugin() {
+export function wgplayerPlugin() {
 	let initializeCalled = false;
 	/** @type {import("$adlad").AdLadPluginInitializeContext} */
 	let pluginContext;
@@ -7,10 +7,10 @@ export function wgplaygroundPlugin() {
 	let onRewardFailCb = () => {};
 
 	const plugin = /** @type {const} @satisfies {import("$adlad").AdLadPlugin} */ ({
-		name: "wgplayground",
+		name: "wgplayer",
 		async initialize(ctx) {
 			if (initializeCalled) {
-				throw new Error("WGPlayGround plugin is being initialized more than once");
+				throw new Error("WGPlayer plugin is being initialized more than once");
 			}
 			initializeCalled = true;
 			pluginContext = ctx;
@@ -18,7 +18,7 @@ export function wgplaygroundPlugin() {
 			ctx.setCanShowRewardedAd(false);
 
 			await ctx.loadScriptTag(
-				"https://universal.wgplayground.com/tag/?lh=play.wgplayground.com&wp=/game/testing-environment/&ws=",
+				"https://universal.wgplayer.com/tag/?lh=play.wgplayground.com&wp=/game/testing-environment/&ws=",
 			);
 
 			/** @type {Promise<void>} */

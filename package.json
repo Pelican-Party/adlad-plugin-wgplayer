@@ -1,12 +1,12 @@
 {
-	"name": "@adlad/plugin-wgplayground",
+	"name": "@adlad/plugin-wgplayer",
 	"version": "0.0.4",
-	"description": "AdLad plugin for the WGPlayGround Games sdk.",
+	"description": "AdLad plugin for the WGPlayer sdk.",
 	"main": "mod.js",
-	"types": "dist/adlad-plugin-wgplayground.d.ts",
+	"types": "dist/adlad-plugin-wgplayer.d.ts",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Pelican-Party/adlad-plugin-wgplayground.git"
+		"url": "git+https://github.com/Pelican-Party/adlad-plugin-wgplayer.git"
 	},
 	"keywords": [
 		"ads",
@@ -16,7 +16,7 @@
 	"author": "Pelican Party Studios",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/Pelican-Party/adlad-plugin-wgplayground/issues"
+		"url": "https://github.com/Pelican-Party/adlad-plugin-wgplayer/issues"
 	},
-	"homepage": "https://github.com/Pelican-Party/adlad-plugin-wgplayground#readme"
+	"homepage": "https://github.com/Pelican-Party/adlad-plugin-wgplayer#readme"
 }

@@ -32,7 +32,7 @@ const bundle = await rollup({
 });
 
 await bundle.write({
-	file: "../dist/adlad-plugin-wgplayground.js",
+	file: "../dist/adlad-plugin-wgplayer.js",
 	format: "esm",
 });
 
@@ -60,7 +60,7 @@ const proc = Deno.run({
 });
 await proc.status();
 
-await Deno.copyFile(path.resolve(tmpDir, "src/mod.d.ts"), path.resolve("dist/adlad-plugin-wgplayground.d.ts"));
+await Deno.copyFile(path.resolve(tmpDir, "src/mod.d.ts"), path.resolve("dist/adlad-plugin-wgplayer.d.ts"));
 
 await Deno.remove(tmpDir, {
 	recursive: true,
